@@ -8,8 +8,9 @@ interface ButtonProps {
 
 export default function Button ( { children }: ButtonProps ) {
   return (
-    <button className={'rounded-xl bg-blue-800 hover:bg-blue-900 font-bold shadow-2xl p-1'}>
-      { children }
-    </button>
+    <></>
+    // <button className={'rounded-xl bg-blue-800 hover:bg-blue-900 font-bold shadow-2xl p-1'}>
+    //   { children }
+    // </button>
   )
 }

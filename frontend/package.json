@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
     "clsx": "^2.0.0",
+    "lucide-react": "^0.279.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "web3": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "latest",

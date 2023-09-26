@@ -5,7 +5,9 @@
 This is a Note for Practicing
 Created by Jeff Ko (Jeff Ke)
 
-use ```yarn``` 
+## Package Used
++ ```yarn``` 
++ ```npm``` (for ```clsx```)
 
 ## To Read List
 + usePreviousRoute()
