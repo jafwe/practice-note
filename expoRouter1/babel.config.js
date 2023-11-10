@@ -7,6 +7,7 @@ module.exports = (api) => {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
+      'nativewind/babel',
       require.resolve('expo-router/babel'),
       ['module-resolver', { alias: { '@': './src' } }]
     ]
