@@ -10,6 +10,3 @@ Created by Jeff Ko (Jeff Ke)
 + ```npm``` (for ```clsx```)
 
 ## To Read List
-+ usePreviousRoute()
-+ \<CombineProvider\>
-+ class-variance-authority
