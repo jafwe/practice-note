@@ -32,7 +32,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="info-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    color={Colors[colorScheme ?? 'light'].tabs}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -46,6 +46,13 @@ export default function TabLayout() {
         options={{
           title: 'Tab Two',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />
+        }}
+      />
+      <Tabs.Screen
+        name="three"
+        options={{
+          title: 'Tab SuRi',
+          //tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />
         }}
       />
     </Tabs>
