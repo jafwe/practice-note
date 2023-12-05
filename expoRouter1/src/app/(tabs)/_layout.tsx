@@ -1,6 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome'
-import { Link, Tabs } from 'expo-router'
-import { Pressable, useColorScheme } from 'react-native'
+import { Link, Tabs, useRouter } from 'expo-router'
+import { Pressable, View, useColorScheme } from 'react-native'
 
 import Colors from '@/constants/Colors'
 
@@ -12,6 +12,7 @@ function TabBarIcon(props: { name: React.ComponentProps<typeof FontAwesome>['nam
 }
 
 export default function TabLayout() {
+  const router = useRouter()
   const colorScheme = useColorScheme()
 
   return (
@@ -49,7 +50,32 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="plus"
+        options={{
+          title: 'Tab Two',
+          tabBarButton: ({ children }) => (
+            <Pressable
+              onPress={() => router.push('/plus')}
+              className={'flex-1 items-center justify-end'}
+            >
+              <View
+                className={'absolute w-20 h-20 rounded-full bg-[#FF2944] border-2 border-transparent'}
+              >
+                {children}
+              </View>
+            </Pressable>),
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />
+        }}
+      />
+      <Tabs.Screen
         name="three"
+        options={{
+          title: 'Tab SuRi',
+          //tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />
+        }}
+      />
+      <Tabs.Screen
+        name="four"
         options={{
           title: 'Tab SuRi',
           //tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />

@@ -4,7 +4,7 @@ import { Text, View } from '@/components/Themed'
 import { useNavigation } from 'expo-router'
 import { useEffect } from 'react'
 
-export default function TabSuriScreen() {
+export default function TabFourScreen() {
   const navigation = useNavigation()
 
   useEffect(() => {
