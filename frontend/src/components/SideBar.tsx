@@ -23,6 +23,11 @@ export default function SideBar () {
         iconName: 'Home',
       },
       {
+        path: '/content/bubble',
+        title: 'Bubble',
+        iconName: 'Home',
+      },
+      {
         path: '/content/sharelink',
         title: 'Share Link',
         iconName: 'CornerUpRight',
@@ -55,7 +60,7 @@ export default function SideBar () {
         )
       }>
         <div 
-          className={'flex justify-end inline-block mb-2'}
+          className={'flex justify-end mb-2'}
         >
           <button 
             className={`transition ${ sideBarisClose && 'invisible' }`}
